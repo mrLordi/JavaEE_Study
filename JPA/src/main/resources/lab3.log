@@ -1,0 +1,102 @@
+2016-11-07 20:30:21 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 20:30:21 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 20:30:21 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 20:30:21 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 20:30:21 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 20:30:28 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 20:30:28 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 20:30:28 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 20:30:28 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 20:30:28 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 23:09:11 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 23:09:11 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 23:09:11 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 23:09:11 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 23:09:11 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 23:09:16 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 23:09:16 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 23:09:16 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 23:09:16 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 23:09:16 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 23:09:19 INFO  AddDescription:64 - Form for add(description) was displayed
+2016-11-07 23:09:21 INFO  AbstractDAO:45 - An entity(Description{title='title', content='content}) was added.
+2016-11-07 23:09:21 INFO  AddDescription:54 - The description(Description{title='title', content='content}) was added
+2016-11-07 23:09:21 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 23:09:21 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 23:09:21 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 23:09:21 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 23:09:21 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 23:09:24 INFO  AddDescription:64 - Form for add(description) was displayed
+2016-11-07 23:09:28 INFO  AbstractDAO:45 - An entity(Description{title='title2', content='content}) was added.
+2016-11-07 23:09:28 INFO  AddDescription:54 - The description(Description{title='title2', content='content}) was added
+2016-11-07 23:09:28 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 23:09:28 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 23:09:28 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 23:09:28 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 23:09:28 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 23:09:30 INFO  AddDescription:64 - Form for add(description) was displayed
+2016-11-07 23:09:32 INFO  AbstractDAO:45 - An entity(Description{title='title3', content='content}) was added.
+2016-11-07 23:09:32 INFO  AddDescription:54 - The description(Description{title='title3', content='content}) was added
+2016-11-07 23:09:32 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 23:09:32 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 23:09:32 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 23:09:32 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 23:09:32 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 23:09:34 INFO  AddDirector:58 - Form for add(director) was displayed
+2016-11-07 23:09:36 INFO  AbstractDAO:45 - An entity(Director{, name surname}) was added.
+2016-11-07 23:09:36 INFO  AddDirector:52 - The director(Director{, name surname}) was added
+2016-11-07 23:09:36 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 23:09:36 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 23:09:36 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 23:09:36 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 23:09:36 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 23:09:38 INFO  AddDirector:58 - Form for add(director) was displayed
+2016-11-07 23:09:40 INFO  AbstractDAO:45 - An entity(Director{, name surname}) was added.
+2016-11-07 23:09:40 INFO  AddDirector:52 - The director(Director{, name surname}) was added
+2016-11-07 23:09:40 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 23:09:40 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 23:09:40 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 23:09:40 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 23:09:40 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 23:09:41 INFO  AddDirector:58 - Form for add(director) was displayed
+2016-11-07 23:09:42 INFO  AbstractDAO:45 - An entity(Director{, name surname}) was added.
+2016-11-07 23:09:42 INFO  AddDirector:52 - The director(Director{, name surname}) was added
+2016-11-07 23:09:42 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 23:09:42 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 23:09:42 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 23:09:42 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 23:09:42 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 23:09:46 INFO  AddMovie:104 - Form for add(movie) was displayed
+2016-11-07 23:09:52 INFO  AbstractDAO:27 - An entity(id =5) from the table 'description' was received.
+2016-11-07 23:09:52 INFO  AbstractDAO:27 - An entity(id = 1) from the table 'director' was received.
+2016-11-07 23:09:52 INFO  AbstractDAO:45 - An entity(Movie{name='name',duration=7200sec, year=2016, description=[title=title,content=content], director=name surname, producers={}}) was added.
+2016-11-07 23:09:52 INFO  AddMovie:94 - The movie(Movie{name='name',duration=7200sec, year=2016, description=[title=title,content=content], director=name surname, producers={}}) was added
+2016-11-07 23:09:52 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 23:09:52 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 23:09:52 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 23:09:52 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 23:09:52 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 23:09:54 INFO  AddMovie:104 - Form for add(movie) was displayed
+2016-11-07 23:09:58 INFO  AbstractDAO:27 - An entity(id =6) from the table 'description' was received.
+2016-11-07 23:09:58 INFO  AbstractDAO:27 - An entity(id = 2) from the table 'director' was received.
+2016-11-07 23:09:58 INFO  AbstractDAO:45 - An entity(Movie{name='name',duration=7200sec, year=2016, description=[title=title2,content=content], director=name surname, producers={}}) was added.
+2016-11-07 23:09:58 INFO  AddMovie:94 - The movie(Movie{name='name',duration=7200sec, year=2016, description=[title=title2,content=content], director=name surname, producers={}}) was added
+2016-11-07 23:09:58 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 23:09:58 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 23:09:58 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 23:09:58 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 23:09:58 INFO  MainServlet:48 - DataBase was displayed
+2016-11-07 23:10:02 INFO  AddMovie:104 - Form for add(movie) was displayed
+2016-11-07 23:10:06 WARN  AddMovie:74 - The directorID was missing when adding
+2016-11-07 23:10:06 INFO  AbstractDAO:27 - An entity(id =73) from the table 'description' was received.
+2016-11-07 23:10:06 WARN  AddMovie:80 - The description with id =73 does not exist.
+2016-11-07 23:10:07 INFO  AddMovie:104 - Form for add(movie) was displayed
+2016-11-07 23:10:12 INFO  AbstractDAO:27 - An entity(id =7) from the table 'description' was received.
+2016-11-07 23:10:12 INFO  AbstractDAO:27 - An entity(id = 3) from the table 'director' was received.
+2016-11-07 23:10:12 INFO  AbstractDAO:45 - An entity(Movie{name='name',duration=7200sec, year=2016, description=[title=title3,content=content], director=name surname, producers={}}) was added.
+2016-11-07 23:10:12 INFO  AddMovie:94 - The movie(Movie{name='name',duration=7200sec, year=2016, description=[title=title3,content=content], director=name surname, producers={}}) was added
+2016-11-07 23:10:12 INFO  AbstractDAO:19 - All entity from the table 'movie' were received.
+2016-11-07 23:10:12 INFO  AbstractDAO:18 - All entity from the table 'description' were received.
+2016-11-07 23:10:12 INFO  AbstractDAO:18 - All entity from the table 'director' were received.
+2016-11-07 23:10:12 INFO  AbstractDAO:20 - All entity from the table 'producer' were received.
+2016-11-07 23:10:12 INFO  MainServlet:48 - DataBase was displayed

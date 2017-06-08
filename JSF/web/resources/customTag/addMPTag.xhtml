@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:composite="http://xmlns.jcp.org/jsf/composite">
+
+<composite:interface>
+    <composite:attribute name="movieIdLabel" />
+    <composite:attribute name="movieIdValue" />
+    <composite:attribute name="producerIdLabel" />
+    <composite:attribute name="producerIdValue" />
+    <composite:attribute name="addButtonValue" />
+    <composite:attribute name="addButtonAction"
+                         method-signature="java.lang.String add()" />
+</composite:interface>
+<composite:implementation>
+    <h:form>
+        <table>
+            <tr>
+                <td>#{cc.attrs.movieIdLabel} </td>
+                <td>
+                    <h:inputText id="movieId" value="#{cc.attrs.movieIdValue}">
+                        <f:validator validatorId="validators.MPValidator" />
+                        <f:attribute name="parameter" value="movieId" />
+                    </h:inputText>
+                    <h:message for="movieId" style="color:red" />
+                </td>
+            </tr>
+            <tr>
+                <td>#{cc.attrs.producerIdLabel} </td>
+                <td>
+                    <h:inputText id="producerId" value="#{cc.attrs.producerIdValue}">
+                        <f:validator validatorId="validators.MPValidator" />
+                        <f:attribute name="parameter" value="producerId" />
+                    </h:inputText>
+                    <h:message for="producerId" style="color:red" />
+                </td>
+            </tr>
+
+        </table>
+        <h:commandButton value="#{cc.attrs.addButtonValue}" action="#{cc.attrs.addButtonAction}"/>
+        <h:commandButton value="Back" onclick="history.back()"/>
+    </h:form>
+</composite:implementation>
+</html>

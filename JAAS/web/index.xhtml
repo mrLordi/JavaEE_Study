@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+   <h:outputStylesheet library="css" name="style.css" />
+</h:head>
+
+<h:body>
+   <div>
+      <h:form>
+         <h3>Movies:</h3>
+         <h:dataTable value="#{movieController.all}" var="movie"
+                      styleClass="table"
+                      headerClass="table-header"
+                      rowClasses="table-odd-row, table-even-row">
+            <h:column>
+               <f:facet name="header">ID</f:facet>
+               #{movie.movieId}
+            </h:column>
+            <h:column>
+               <f:facet name="header">Name</f:facet>
+               #{movie.name}
+            </h:column>
+            <h:column>
+               <f:facet name="header">Duration(sec)</f:facet>
+               #{movie.duration}
+            </h:column>
+            <h:column>
+               <f:facet name="header">Year</f:facet>
+               #{movie.year}
+            </h:column>
+            <h:column>
+               <f:facet name="header">DescriptionID</f:facet>
+               #{movie.description.descriptionId}
+            </h:column>
+            <h:column>
+               <f:facet name="header">DirectorID</f:facet>
+               #{movie.director.directorId}
+            </h:column>
+            <h:column>
+               <f:facet name="header">Action</f:facet>
+
+               <h:commandLink value="Delete" action="#{movieController.delete(movie)}"/>
+               |
+               <h:commandLink value="Update" action="#{movieController.goToUpdate(movie)}"/>
+               |
+                <h:commandLink value="Make the sequel" action="#{sequelController.searchDirector(movie)}"/>
+            </h:column>
+         </h:dataTable>
+         <h:link outcome="#{movieController.goToAdd()}" value="Add new movie"/>
+      </h:form>
+
+       <hr />
+       <hr />
+
+       <h:form>
+           <h3>Descriptions:</h3>
+           <h:dataTable value="#{descriptionController.all}" var="description"
+                        styleClass="table"
+                        headerClass="table-header"
+                        rowClasses="table-odd-row, table-even-row">
+               <h:column>
+                   <f:facet name="header">ID</f:facet>
+                   #{description.descriptionId}
+               </h:column>
+               <h:column>
+                   <f:facet name="header">Title</f:facet>
+                   #{description.title}
+               </h:column>
+               <h:column>
+                   <f:facet name="header">Content</f:facet>
+                   #{description.content}
+               </h:column>
+               <h:column>
+                   <f:facet name="header">Action</f:facet>
+                   <h:commandLink value="Delete" action="#{descriptionController.delete(description)}"/>
+                   |
+                   <h:commandLink value="Update" action="#{descriptionController.goToUpdate(description)}"/>
+               </h:column>
+           </h:dataTable>
+           <h:link outcome="#{descriptionController.goToAdd()}" value="Add new description"/>
+       </h:form>
+
+       <hr />
+       <hr />
+
+       <h:form>
+           <h3>Directors:</h3>
+           <h:dataTable value="#{directorController.all}" var="director"
+                        styleClass="table"
+                        headerClass="table-header"
+                        rowClasses="table-odd-row, table-even-row">
+               <h:column>
+                   <f:facet name="header">ID</f:facet>
+                   #{director.directorId}
+               </h:column>
+               <h:column>
+                   <f:facet name="header">Name</f:facet>
+                   #{director.name}
+               </h:column>
+               <h:column>
+                   <f:facet name="header">Surname</f:facet>
+                   #{director.surname}
+               </h:column>
+               <h:column>
+                   <f:facet name="header">Action</f:facet>
+                   <h:commandLink value="Delete" action="#{directorController.delete(director)}"/>
+                   |
+                   <h:commandLink value="Update" action="#{directorController.goToUpdate(director)}"/>
+               </h:column>
+           </h:dataTable>
+           <h:link outcome="#{directorController.goToAdd()}" value="Add new director"/>
+       </h:form>
+
+       <hr />
+       <hr />
+
+       <h:form>
+           <h3>Producers:</h3>
+           <h:dataTable value="#{producerController.all}" var="producer"
+                        styleClass="table"
+                        headerClass="table-header"
+                        rowClasses="table-odd-row, table-even-row">
+               <h:column>
+                   <f:facet name="header">ID</f:facet>
+                   #{producer.producerId}
+               </h:column>
+               <h:column>
+                   <f:facet name="header">Name</f:facet>
+                   #{producer.name}
+               </h:column>
+               <h:column>
+                   <f:facet name="header">Surname</f:facet>
+                   #{producer.surname}
+               </h:column>
+               <h:column>
+                   <f:facet name="header">type</f:facet>
+                   #{producer.type}
+               </h:column>
+               <h:column>
+                   <f:facet name="header">Action</f:facet>
+                   <h:commandLink value="Delete" action="#{producerController.delete(producer)}"/>
+                   |
+                   <h:commandLink value="Update" action="#{producerController.goToUpdate(producer)}"/>
+               </h:column>
+           </h:dataTable>
+           <h:link outcome="#{producerController.goToAdd()}" value="Add new producer"/>
+       </h:form>
+
+       <hr />
+       <hr />
+
+       <h:form>
+           <h2>Movie - Producer</h2>
+           <table class="table">
+               <thead>
+               <tr>
+                   <th class="table-header">Movie ID</th>
+                   <th class="table-header">Producer ID</th>
+                   <th class="table-header">Action</th>
+               </tr>
+               </thead>
+               <ui:repeat value="#{producerController.all}" var="producer">
+                   <ui:repeat value="#{producer.movies}" var="movie">
+                       <tr class="table-row">
+                           <td>#{movie.movieId}</td>
+                           <td>#{producer.producerId}</td>
+                           <td>
+                               <h:commandLink action="#{MPController.delete(movie, producer)}" value="Delete"/>
+                           </td>
+                       </tr>
+                   </ui:repeat>
+               </ui:repeat>
+           </table>
+           <h:link outcome="#{MPController.goToAdd()}" value="Add movie - producer" />
+       </h:form>
+   </div>
+</h:body>
+</html>
